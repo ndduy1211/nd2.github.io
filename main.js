@@ -1,0 +1,11 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.toggle');
+    const menu = document.querySelector('nav.menu');
+
+    toggle.addEventListener('click', function () {
+        menu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function (event) {
+        if (!menu.contains(event.target) &&

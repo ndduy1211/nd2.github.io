@@ -1,0 +1,387 @@
+/* Reset mặc định */
+body, h1, h2, h3, p, ul, img, form, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cài đặt kiểu chữ và màu nền */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 60px; /* Để không bị che bởi thanh menu cố định */
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    max-width: 100%;
+}
+
+.toggle {
+    display: none; /* Ẩn bởi mặc định */
+}
+
+/* Thanh menu điều hướng */
+nav.menu {
+    display: flex;
+    gap: 20px;
+}
+
+nav.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav.menu a:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner {
+    background: url('https://source.unsplash.com/random/1600x900') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.banner .textBx {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner h2 span {
+    color: #ff6347;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.banner .btn {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.banner .btn:hover {
+    background: #e5533b;
+}
+
+/* About section */
+.about {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.about .heading h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.about .contentBx {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.about img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Services section */
+.services {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.services .heading h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.services .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.servicesBx {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.servicesBx img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.servicesBx h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+/* Work section */
+.work {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.work .heading h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.work .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.workBx {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.workBx img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Testinomial section */
+.testinomial {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.testinomial .heading h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.testinomial .heading p {
+    text-align: center;
+    font-style: italic;
+}
+
+.testinomial .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testinomialBx {
+    flex: 1 1 calc(50% - 20px);
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.testinomialBx p {
+    font-style: italic;
+}
+
+.testinomialBx h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.testinomialBx div {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Contact section */
+.contact {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.contact .heading h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.contact .heading p {
+    text-align: center;
+    font-style: italic;
+}
+
+.contact .content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactInfo {
+    flex: 1;
+}
+
+.contactInfoBx {
+    margin-bottom: 20px;
+}
+
+.contactInfoBx .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contactInfoBx .icon {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.contactInfoBx .text h3 {
+    margin: 0;
+}
+
+.contactInfoBx .text p {
+    margin: 5px 0 0;
+}
+
+/* Form */
+.formBx {
+    flex: 1;
+    max-width: 600px;
+}
+
+.formBx form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx input,
+.formBx textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formBx .btn {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formBx .btn:hover {
+    background: #e5533b;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .copyright {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .toggle {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    nav.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+    }
+
+    nav.menu.active {
+        display: flex;
+    }
+
+    nav.menu a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .content.grid-container {
+        display: block;
+    }
+
+    .content.grid-container > div {
+        margin-bottom: 20px;
+    }
+}

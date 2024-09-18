@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio | Responsive Website Design</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#home" class="logo"><img src="/images/2_1.png" alt="" style="width: 200px;"></a>
+
+      <span class="toggle" onclick="toggleMenu()"></span>
+
+      <nav class="menu" onclick="toggleMenu()">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Skills</a>
+        <a href="#homework">Home Work</a>
+        <a href="#testinomial">Testinomial</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner" id="home">
+    <div class="container">
+      <div class="textBx">
+        <h2>
+          Hello, I'm
+          <br />
+          <span>Nguyễn Đình Duy</span>.</span>
+        </h2>
+        <h3>I'm a Bet Player.</h3>
+        <a href="#about" class="btn">About Me</a>
+      </div>
+    </div>
+  </section>
+  <!-- Banner End -->
+
+  <!-- About Start -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="content grid-container">
+        <div class="contentBx">
+          <h3>I'm a Student.</h3>
+          <p>
+            What's up, fam?<br />
+
+            I'm SomeOne, but on the field, they call me "The son of the Wind God". Born and bred on the streets of
+            Ha Noi, I'm all about that football life. <br />
+
+            I've got skills for days and a passion for the game like no other. Graduated from Kindergarden,
+            but you'll usually find me on the pitch, putting in work and chasing that passion. <br/><br/>
+
+            When I'm not training, I'm vibing to hip-hop, getting in the zone, and visualizing my next big play. I live
+            and breathe football, but I've also got a few tricks up my sleeve off the pitch. I'm all about that hustle,
+            staying hungry, and grinding for success. <br/>
+
+            Let's link up, hit the pitch, and make some magic happen.<br />
+            <br />
+            Sóc Sơn, my hometown, is a charming district located on the outskirts of Hanoi, the capital city of Vietnam.
+            Known for its serene countryside, lush green fields, and tranquil lakes, Sóc Sơn offers a peaceful escape
+            from the bustling city life. The district is dotted with traditional villages where you can witness the rich
+            cultural heritage of Vietnam, and its vibrant markets offer a glimpse into the daily lives of the locals.
+            With its beautiful landscapes and warm-hearted people, Sóc Sơn holds a special place in my heart.<br />
+            Stay blessed,<br/>
+
+            Duy Ngô, aka The son of the Wind God
+          </p>
+        </div>
+
+        <div>
+          <img src="https://toplisthanoi.com/wp-content/uploads/2019/09/n%C3%BAi-%C4%91%C3%B4i-ss.jpg" alt="Image" class="img" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="homework" id="homework">
+    <div class="container">
+      <div class="heading">
+        <h2>Home Work</h2>
+        <p>Some of my featured projects and homework assignments.</p>
+      </div>
+      
+      <div class="content grid-container">
+        <div class="homeworkBx">
+          <img src="https://via.placeholder.com/300x200" alt="Homework 1">
+          <h3>Project 1: Personal Portfolio</h3>
+          <p>This project showcases my web development skills, including HTML, CSS, and JavaScript.</p>
+          <a href="#home">View Details</a>
+        </div>
+        
+        <div class="homeworkBx">
+          <img src="https://via.placeholder.com/300x200" alt="Homework 2">
+          <h3>Project 2: E-commerce Website</h3>
+          <p>An e-commerce website built using PHP and MySQL with full backend functionality.</p>
+          <a href="#home">View Details</a>
+        </div>
+  
+        <div class="homeworkBx">
+          <img src="https://via.placeholder.com/300x200" alt="Homework 3">
+          <h3>Project 3: JavaScript Game</h3>
+          <p>A fun JavaScript-based game that helps users practice their coding skills.</p>
+          <a href="#home">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="heading">
+        <h2>My Skills</h2>
+      </div>
+      <div class="content grid-container">
+        <div class="servicesBx">
+          <img src="https://th.bing.com/th/id/OIP.744mxzC5wmuJwSAv6Ej3XwHaHa?rs=1&pid=ImgDetMain" alt="Image" />
+          <h2>HTML</h2>
+          <p>
+            <a href="https://www.w3schools.com/">Nâng cấp kĩ năng</a>
+          </p>
+        </div>
+  </section>
+  <!-- Services End -->
+
+  <section class="testinomial" id="testinomial">
+    <div class="container">
+      <div class="heading">
+        <h2>Testinomial</h2>
+        <p>Other players comment about me.</p>
+      </div>
+
+      <div class="content grid-container" style="margin-bottom: 20px;">
+        <div class="testinomialBx">
+          <p>
+            "One of the best player in my generation"
+          </p>
+          <h3>
+            Roberto Carlos
+            <div>Legendary Brazillian Soccer Player</div>
+          </h3>
+        </div>
+
+        <div class="testinomialBx">
+          <p>
+            "Give me 9 pieces of wood and Duy Ngô to play with me, we will won every tournemants"
+          </p>
+          <h3>
+            Cristiano Ronaldo
+            <div>2nd goat</div>
+          </h3>
+        </div>
+      </div>
+      <div class="content grid-container">
+        <div class="testinomialBx">
+          <p>
+            "A lifetime of integrity"
+          </p>
+          <h3>
+            Lionel Messex
+            <div>G.O.A.T</div>
+          </h3>
+        </div>
+
+        <div class="testinomialBx">
+          <p>
+            "Stop is failure"
+          </p>
+          <h3>
+            Mohammed Sena
+            <div>8x bet</div>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="heading">
+        <h2>Contact</h2>
+        <p>Add friend with me.</p>
+      </div>
+
+      <div class="content grid-container">
+        <div class="contactInfo">
+          <h3>Contact Info</h3>
+          <div class="contactInfoBx">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>
+                  4671 Bui Van Trach,
+                  <br />
+                  Hanoi, Vietnam,
+                  <br />
+                  55060
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>507-475-6094</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>duyngo2002@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="formBx">
+          <form>
+            <h3>Message Me</h3>
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email" />
+            <textarea placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        <p>Copyright &copy; <span id="currentYear">2024</span> Duy Ngo. All Right Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <script src="main.js"></script>
+</body>
+
+</html>

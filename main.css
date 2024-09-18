@@ -348,6 +348,79 @@ footer .copyright {
     margin: 0 auto;
 }
 
+/* Home Work Section */
+#homework {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  #homework .heading {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  #homework .heading h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #homework .heading p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Homework Content Grid */
+  #homework .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  #homework .homeworkBx {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  #homework .homeworkBx:hover {
+    transform: translateY(-10px);
+  }
+  
+  #homework .homeworkBx img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  #homework .homeworkBx h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  #homework .homeworkBx p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  #homework .homeworkBx a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  #homework .homeworkBx a:hover {
+    background-color: #555;
+  }
+  
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .toggle {
